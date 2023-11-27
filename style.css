@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    line-height: normal;
+    height: 100vh;
+    background: var(--Blue-Background, #F3F9FF);
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    padding: 32px 0px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    max-width: 864px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #093254;
+}
+
+#nav img {
+    width: 188px;
+    height: 58px;
+    padding-right: 188px;
+}
+
+ul {
+    display: flex;
+    width: 504px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    list-style-type: none;
+}
+
+#dd-arrow {
+    padding-left: 3px;
+}
+
+#navbar li:hover #dd-arrow {
+    transform: translateY(3px) scale(1.1);
+    transition: .25s ease-in-out;
+}
+
+li:hover {
+    color: #3c678f;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+#get-in-touch-btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid #023667;
+}
+
+#nav-div {
+    display: flex;
+    align-items: center;
+}
+
+#navbar {
+    max-width: 864px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    color: #093254;
+    text-align: right;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.14px;
+}
+
+#main {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 48px;
+    justify-content: center;
+}
+
+#content {
+    padding: 0px 100px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 397px;
+    font-style: normal;
+    font-family: Outfit;
+}
+
+#text-header {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 160%;
+    padding-top: 16px;
+    /* 16px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #828282;
+    align-self: stretch;
+}
+
+#text-body {
+    color: #828282;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    padding-top: 16px;
+    /* 23.4px */
+    letter-spacing: -0.18px;
+}
+
+#text-title {
+    color: #093254;
+    font-family: Outfit;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 64.8px */
+    letter-spacing: -1.08px;
+}
+
+#btn-section {
+    display: flex;
+    padding-top: 40px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid #023667;
+    color: #023667;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    background-color: #F3F9FF;
+    /* 19.6px */
+    letter-spacing: -0.28px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#btn1 {
+    background-color: #023667;
+    color: #F3F9FF;
+}
+
+#pic{
+    padding-left: 200px;
+    height: 488px;
+}
+
+#hamburger{
+    display: none;
+}
+#hamburger:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+    #header{
+        width: 100%;
+        padding: 0;
+    }
+    #navbar {
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        margin-left: -10%;
+    }
+    #nav img{
+        padding: 0;
+        margin: 0;
+    }
+    #nav {
+        justify-content: space-between;
+    }
+    #main{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    #content{
+        flex-direction: column-reverse;
+        width: 100vw;
+        padding: 0;
+        margin:0;
+        margin-top: -20%;
+    }
+    #main img{
+        padding: 0;
+        margin: 0;
+        justify-self: flex-start;
+        transform: scale(0.65);
+    }
+
+    #content #text{
+        margin-top: -30%;
+        transform: scale(0.8);
+        text-align: center;
+    }
+    #btn-section {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        padding-bottom: 10%;
+    }
+    .btn {
+        width: 90%;
+    }
+    #pic{
+        padding: 0;
+    }
+}
